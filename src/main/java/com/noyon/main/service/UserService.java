@@ -18,7 +18,7 @@ public class UserService {
         if (existing.isPresent()) {
             throw new RuntimeException("Email already registered");
         }
-        user.setRole("USER");
+        user.setRole("ADMIN");
         return userRepository.save(user);
     }
 

@@ -1,6 +1,6 @@
 package com.noyon.main.model;
 
-import java.time.LocalDateTime;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -25,7 +25,7 @@ public class Donation {
 	private Long id;
 	
 	private Double amount;
-	private LocalDateTime createdAt=LocalDateTime.now();
+	
 	
 	@ManyToOne
     private User user;
